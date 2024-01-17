@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    color: white;
+}
+
+header img{
+    position: relative;
+    width: 100%;
+}
+
+.header-text{
+    position: absolute;
+    top: 2%;
+    left: 4%;
+
+}
+
+.header-text p {
+    font-size: 1rem;
+}
+
+main h2{
+    text-align: center;
+    margin-top: .8em;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.each-Menu-Item{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+    margin: 1.5em 1em;
+    padding: 1em 0;
+}
+
+.each-Menu-Item img{
+    margin-right: 1.5em;
+}
+
+.fa-solid, .fas{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.item-img{
+    width: 25%;
+    border-radius: 4px;
+    /* height: 80px; */
+}
+
+span{
+    font-weight: bold;
+}
+
+#customer-order{
+    display: block;
+    padding-bottom: 5em;
+    margin: 0.8em 2em;
+}
+
+.item-name button{
+    color: #BBBBBB;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#customer-order h3{
+    text-align: center;
+}
+
+.item-description{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0 1em 0;
+}
+
+.item-name{
+    display: flex;
+    gap: 20px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    padding: .5em 0 2em 0;
+    border-top: 2px solid #393333;
+}
+
+#complete-order-btn{
+    width: 100%;
+    background-color: #16DB99;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.menu-details{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+    margin-right: 1.5em;
+}
+
+#confirmation-message{
+    display: none;
+    text-align: center;
+    padding: .5em 1.5em;
+    background-color: #16DB99;
+    width: 100%;
+}
+
+.modal-container{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    padding: 2em;
+    background-color: #16DB99;
+    color: white;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2em;
+}
+
+form input{
+    padding: .5em;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+form button{
+    border: none;
+    background-color: #22ce95;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: white;
+    color: black ;
+}
+
+.blurr{
+    filter: blur(2px); 
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+    <title>Ordering App</title>
+</head>
+<body>
+    <header>
+       <img src="/images/diner.jpg">
+       <div class="header-text">
+           <h1>Jimmy's Diner</h1>
+           <p>The best burgers and pizzas in town.</p>
+       </div>
+    </header>
+    <main>
+        <h2>Menu</h2>
+        <div id="menu"></div>
+        <div id="customer-order"></div>
+        <h3 id="confirmation-message"></h3>
+    </main>
+    <modal class="modal-container">
+        <h2>Enter Card Details</h2>
+        <form id="payment-form">
+            <input type="text" name="name" placeholder="Enter your name" id="card-name" required>
+            <input type="number" name="card-number" placeholder="Enter card number" id="card-number" required>
+            <input type="number" name="CVV" placeholder="Enter CVV" id="card-cvv" required>
+            <button type="submit" id="pay-btn">PAY</button>
+        </form>
+    </modal>
+</body>
+</html>
