@@ -99,9 +99,6 @@ const paymentForm = document.getElementById("payment-form");
 const confirmationMessage = document.getElementById("confirmation-message");
 const modalContainer = document.querySelector(".modal-container");
 const name = document.getElementById("card-name");
-const cardNumber = document.getElementById("card-number");
-const cardCVV = document.getElementById("card-cvv");
-
 
 //Event Handling for the Payment Form
 paymentForm.addEventListener("submit", function (e) {
@@ -120,9 +117,7 @@ paymentForm.addEventListener("submit", function (e) {
     }, 3000);
     
     //Reseting the values after the form has been submitted.
-    name.value = "";
-    cardNumber.value = "";
-    cardCVV.value = "";
+    paymentForm.reset();
     orderItems = [];
 });
 
