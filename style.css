@@ -1,3 +1,5 @@
+/* DEFAULT STYLING */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body{
     height: 100vh;
     width: 100vw;
 }
+
+/* HEADER SECTION  */
 
 header{
     color: white;
@@ -23,13 +27,14 @@ header img{
     position: absolute;
     top: 2%;
     left: 4%;
-
 }
 
 .header-text p {
     font-size: .8rem;
     padding-top: .5em;
 }
+
+/* MAIN SECTION  */
 
 main h2{
     text-align: center;
@@ -55,6 +60,7 @@ main h2{
     border-radius: 4px;
 }
 
+/* FONT AWESOME IMAGE USED AS A BUTTON */
 .fa-solid, .fas{
     font-size: 1.5rem;
     cursor: pointer;
@@ -117,6 +123,7 @@ span{
     padding: 1em;
 }
 
+/* CONFIRMATION MESSAGE AFTER THE FORM HAS BEEN SUBMITTED */
 
 #confirmation-message{
     display: none;
@@ -125,6 +132,9 @@ span{
     background-color: #16DB99;
     width: 100%;
 }
+
+
+/* MODAL STYLING */
 
 .modal-container{
     display: none;
@@ -151,6 +161,8 @@ form input{
     border: none;
 }
 
+/* STYLING TO REMOVE THE INPUT NUMBER SIDEBAR */
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none; 
@@ -170,6 +182,64 @@ form button:hover{
     color: black ;
 }
 
+/* BLUR EFFECT FOR WHEN THE MODAL IS OPEN */
+
 .blurr{
     filter: blur(2px); 
+}
+
+/* MEDIA LAYOUT FOR SCREENS BIGGER THAN 426PX */
+
+@media(min-width: 426px){
+
+    .modal-container{
+        top: 50%;
+    }
+}
+
+/* MEDIA LAYOUT FOR SCREENS BIGGER THAN 768PX */
+
+@media(min-width: 768px){
+
+    header img{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    main{
+        margin: 2em 5em;
+    }
+
+    #customer-order{
+        margin: 1em 15em;
+    }
+
+    .menu-details{
+        width: 80%;
+        gap: 70px;
+    }
+
+    .each-Menu-Item img{
+        margin-right: 5em;
+    }
+
+    .header-text p{
+        font-size: 1.5rem;
+    }
+
+    main h2{
+        margin-bottom: 1em;
+        font-size: 2.5rem;
+    }
+
+    .modal-container{
+        top: 60%;
+        left: 30%;
+        width: 50%;
+
+    }
 }
