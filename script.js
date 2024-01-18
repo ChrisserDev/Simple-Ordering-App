@@ -85,11 +85,12 @@ function renderOrder() {
 function removeItem(itemIdToRemove) {
     orderItems = orderItems.filter(item => item.id != itemIdToRemove);
     
-    if(orderItems.length === 0) {
+    renderOrder();
+
+    if(orderItems.length == 0) {
         document.getElementById("customer-order").style.display = "none";
     };
     
-    renderOrder()
 };
 
 //Payment Modal Form Container
